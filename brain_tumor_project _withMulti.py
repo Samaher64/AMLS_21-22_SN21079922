@@ -717,7 +717,7 @@ train_datagen = ImageDataGenerator(#rotation_range=10,  # rotation
 df_train['tumor_type'] = df_train['tumor_type'].astype('str')
 
 train_generator = train_datagen.flow_from_dataframe(dataframe=df_train, 
-                                              directory='/content/drive/MyDrive/data/Brain/crop',
+                                             # directory='/content/drive/MyDrive/data/Brain/crop',
                                               x_col="file_name", 
                                               y_col="tumor_type",                          
                                               class_mode="sparse", 
@@ -746,7 +746,7 @@ for i in range(5):
   ax[i].axis('off')
 
 valid_generator = train_datagen.flow_from_dataframe(dataframe=df_train, 
-                                              directory='/content/drive/MyDrive/data/Brain/crop',
+                                              #directory='/content/drive/MyDrive/data/Brain/crop',
                                               x_col="file_name", 
                                               y_col="tumor_type",                          
                                               class_mode="sparse", 
@@ -770,8 +770,8 @@ test_datagen = ImageDataGenerator(#rotation_range=20,  # rotation
 
 df_test['tumor_type'] = df_test['tumor_type'].astype('str')
 
-test_generator = test_datagen.flow_from_dataframe(dataframe=df_test, 
-                                                   directory='/content/drive/MyDrive/data/Brain/crop',
+#test_generator = test_datagen.flow_from_dataframe(dataframe=df_test, 
+                                                  # directory='/content/drive/MyDrive/data/Brain/crop',
                                                    x_col="file_name", 
                                                    y_col="tumor_type", 
                                                    class_mode="sparse", 
