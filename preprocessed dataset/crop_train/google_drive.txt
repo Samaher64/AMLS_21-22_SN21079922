@@ -1,0 +1,4 @@
+
+Due to the size limitation, the preprocessed train images were uploded on google drive.
+
+https://drive.google.com/file/d/1-_hqsU0KFrf5PQd9wSQJM_0PUHBcLgvZ/view?usp=sharing
